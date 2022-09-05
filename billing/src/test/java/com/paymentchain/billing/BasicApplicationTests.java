@@ -1,5 +1,6 @@
 package com.paymentchain.billing;
 
+<<<<<<< HEAD
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.paymentchain.billing.common.InvoiceRequestMapper;
 import com.paymentchain.billing.common.InvoiceResposeMapper;
@@ -43,6 +44,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ExtendWith(SpringExtension.class)//junit5 suport extension interface hrough which classes can integrate with the JUnit test.
 @AutoConfigureMockMvc/*allow test only http incoming request layer without start the serve, 
         but starting the full spring application context*/
+=======
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+>>>>>>> cf82b710de3fbc3bd47b4780a4b128b2f7b576d2
 public class BasicApplicationTests {
   
     @Autowired
@@ -83,6 +94,7 @@ public class BasicApplicationTests {
         ).andDo(print()).andExpect(status().isOk());
     }
 
+<<<<<<< HEAD
     /**
      * Test call of create method, on weblayer.
      */
@@ -103,5 +115,12 @@ public class BasicApplicationTests {
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.invoiceId").value(1));
     }
+=======
+	@Test
+	public void contextLoads() {
+		String message = "default message cambio test devops";
+		Assert.assertNotNull(message);
+	}
+>>>>>>> cf82b710de3fbc3bd47b4780a4b128b2f7b576d2
 
 }
