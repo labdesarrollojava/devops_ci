@@ -43,7 +43,7 @@ billing/target/generated-sources/annotations/com/paymentchain/billing/common/Inv
 billing/target/generated-sources/annotations/com/paymentchain/billing/common/InvoiceResposeMapperImpl.java
 billing/target/surefire-reports/com.paymentchain.billing.BasicApplicationTests.txt
 billing/target/surefire-reports/TEST-com.paymentchain.billing.BasicApplicationTests.xml
-**/*class
+
 billing/target/classes/com/paymentchain/billing/InvoiceApplication.class
 billing/target/classes/com/paymentchain/billing/InvoiceApplication$1.class
 billing/target/classes/com/paymentchain/billing/common/InvoiceRequestMapper.class
